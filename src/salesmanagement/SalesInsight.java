@@ -29,6 +29,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.SwingUtilities;
 import org.jfree.chart.axis.CategoryAxis;
 import org.jfree.chart.axis.NumberAxis;
 
@@ -64,13 +65,15 @@ public class SalesInsight extends javax.swing.JPanel {
         jButton1 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
         salesInformation = new javax.swing.JLabel();
         JavaRides = new javax.swing.JLabel();
         since2004 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         LeCars = new javax.swing.JLabel();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
         background = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -102,12 +105,12 @@ public class SalesInsight extends javax.swing.JPanel {
         jLabel3.setBackground(new java.awt.Color(255, 153, 102));
         jLabel3.setFont(new java.awt.Font("Microsoft New Tai Lue", 3, 25)); // NOI18N
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/12.png"))); // NOI18N
-        jLabel3.setText("Accquire price of by month");
+        jLabel3.setText("Accquire price by month");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 410, 500, -1));
 
         jButton2.setFont(new java.awt.Font("Segoe UI Light", 1, 20)); // NOI18N
         jButton2.setText("Chart");
-        jButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.lightGray, java.awt.Color.white, java.awt.Color.lightGray, java.awt.Color.lightGray));
+        jButton2.setBorder(null);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -117,7 +120,7 @@ public class SalesInsight extends javax.swing.JPanel {
 
         jButton3.setFont(new java.awt.Font("Segoe UI Light", 1, 20)); // NOI18N
         jButton3.setText("Chart");
-        jButton3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.lightGray, java.awt.Color.white, java.awt.Color.lightGray, java.awt.Color.lightGray));
+        jButton3.setBorder(null);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -127,7 +130,7 @@ public class SalesInsight extends javax.swing.JPanel {
 
         jButton1.setFont(new java.awt.Font("Segoe UI Light", 1, 20)); // NOI18N
         jButton1.setText("Chart");
-        jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.lightGray, java.awt.Color.white, java.awt.Color.lightGray, java.awt.Color.lightGray));
+        jButton1.setBorder(null);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -137,7 +140,7 @@ public class SalesInsight extends javax.swing.JPanel {
 
         jButton4.setFont(new java.awt.Font("Segoe UI Light", 1, 20)); // NOI18N
         jButton4.setText("Chart");
-        jButton4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.lightGray, java.awt.Color.white, java.awt.Color.lightGray, java.awt.Color.lightGray));
+        jButton4.setBorder(null);
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -147,23 +150,13 @@ public class SalesInsight extends javax.swing.JPanel {
 
         jButton5.setFont(new java.awt.Font("Segoe UI Light", 1, 20)); // NOI18N
         jButton5.setText("Chart");
-        jButton5.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.lightGray, java.awt.Color.white, java.awt.Color.lightGray, java.awt.Color.lightGray));
+        jButton5.setBorder(null);
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
             }
         });
         add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 420, 100, -1));
-
-        jButton6.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jButton6.setText("MergeDataset");
-        jButton6.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.lightGray, java.awt.Color.white, java.awt.Color.lightGray, java.awt.Color.lightGray));
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
-            }
-        });
-        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 80, 130, 30));
 
         salesInformation.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 40)); // NOI18N
         salesInformation.setText("Sales Information");
@@ -178,7 +171,7 @@ public class SalesInsight extends javax.swing.JPanel {
         add(since2004, new org.netbeans.lib.awtextra.AbsoluteConstraints(774, 40, 80, 10));
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel7.setText("Press the \"MergeDataset\" and exit for the first time to load the data");
+        jLabel7.setText("Press the \"MergeDataset\" and reload for the first time to load the data");
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, -1, 30));
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255,80));
@@ -188,13 +181,41 @@ public class SalesInsight extends javax.swing.JPanel {
         LeCars.setText(" LeCars");
         add(LeCars, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 460, 110, -1));
 
+        jButton7.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton7.setText("Reload");
+        jButton7.setBorder(null);
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+        add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 80, 70, 30));
+
+        jButton8.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton8.setText("Merge Dataset");
+        jButton8.setBorder(null);
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+        add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 80, 140, 30));
+
+        jButton6.setText("Back");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 520, -1, -1));
+
         background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/3.png"))); // NOI18N
         background.addContainerListener(new java.awt.event.ContainerAdapter() {
             public void componentRemoved(java.awt.event.ContainerEvent evt) {
                 backgroundComponentRemoved(evt);
             }
         });
-        add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 900, 600));
+        add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 600));
     }// </editor-fold>//GEN-END:initComponents
 
     public static void SalesInsight() {
@@ -651,83 +672,111 @@ public class SalesInsight extends javax.swing.JPanel {
 
     }//GEN-LAST:event_jButton5ActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-           
-        run();
-    }
-    
-
-    public void run() {
-        String salesFilePath = "src\\sales.csv";
-        String vehicleFilePath = "src\\vehicle.csv";
-
-        try {
-            // Load datasets
-            List<String> salesDataset = loadDataset(salesFilePath);
-            List<String> vehicleDataset = loadDataset(vehicleFilePath);
-
-            // Merge datasets based on the "carPlate" column
-            List<String> mergedDataset = mergeDatasets(salesDataset, vehicleDataset, "carPlate");
-            writeMergedContentToFile("src\\newdataset.csv", mergedDataset);
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public List<String> loadDataset(String filePath) throws IOException {
-        List<String> dataset = new ArrayList<>();
-        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                dataset.add(line);
-            }
-        }
-        return dataset;
-    }
-
-    public List<String> mergeDatasets(List<String> dataset1, List<String> dataset2, String keyColumn) {
-        List<String> mergedDataset = new ArrayList<>();
-        Map<String, String> mapDataset2 = createMapFromDataset(dataset2, keyColumn);
-
-        for (String row : dataset1) {
-            String[] columns = row.split(",");
-            String key = columns[2].trim();
-
-            if (mapDataset2.containsKey(key)) {
-                mergedDataset.add(row + "," + mapDataset2.get(key));
-            }
-        }
-
-        return mergedDataset;
-    }
-
-    public Map<String, String> createMapFromDataset(List<String> dataset, String keyColumn) {
-        Map<String, String> mapDataset = new HashMap<>();
-
-        for (String row : dataset) {
-            String[] columns = row.split(",");
-            mapDataset.put(columns[0].trim(), row);
-        }
-
-        return mapDataset;
-    }
-
-    public void writeMergedContentToFile(String filePath, List<String> content) {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
-            for (String line : content) {
-                writer.write(line);
-                writer.newLine();
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-    }//GEN-LAST:event_jButton6ActionPerformed
-
     private void backgroundComponentRemoved(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_backgroundComponentRemoved
         // TODO add your handling code here:
     }//GEN-LAST:event_backgroundComponentRemoved
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(this);
+        frame.dispose();
+
+        // Create a new JFrame
+        JFrame newFrame = new JFrame("Chart Application");
+
+        // Instantiate your Practice5 class
+        SalesInsight sales = new SalesInsight();
+
+        // Add the Practice5 panel to the new JFrame
+        newFrame.getContentPane().add(sales);
+
+        // Set JFrame properties
+        newFrame.setSize(900, 600);
+        newFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        newFrame.setLocationRelativeTo(null); // Center the frame on the screen
+
+        // Make the new JFrame visible
+        newFrame.setVisible(true);
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+      
+        run();
+        }
+
+        public void run() {
+            String salesFilePath = "src\\sales.csv";
+            String vehicleFilePath = "src\\vehicle.csv";
+
+            try {
+                // Load datasets
+                List<String> salesDataset = loadDataset(salesFilePath);
+                List<String> vehicleDataset = loadDataset(vehicleFilePath);
+
+                // Merge datasets based on the "carPlate" column
+                List<String> mergedDataset = mergeDatasets(salesDataset, vehicleDataset, "carPlate");
+                writeMergedContentToFile("src\\newdataset.csv", mergedDataset);
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+        public List<String> loadDataset(String filePath) throws IOException {
+            List<String> dataset = new ArrayList<>();
+            try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    dataset.add(line);
+                }
+            }
+            return dataset;
+        }
+
+        public List<String> mergeDatasets(List<String> dataset1, List<String> dataset2, String keyColumn) {
+            List<String> mergedDataset = new ArrayList<>();
+            Map<String, String> mapDataset2 = createMapFromDataset(dataset2, keyColumn);
+
+            for (String row : dataset1) {
+                String[] columns = row.split(",");
+                String key = columns[2].trim();
+
+                if (mapDataset2.containsKey(key)) {
+                    mergedDataset.add(row + "," + mapDataset2.get(key));
+                }
+            }
+
+            return mergedDataset;
+        }
+
+        public Map<String, String> createMapFromDataset(List<String> dataset, String keyColumn) {
+            Map<String, String> mapDataset = new HashMap<>();
+
+            for (String row : dataset) {
+                String[] columns = row.split(",");
+                mapDataset.put(columns[0].trim(), row);
+            }
+
+            return mapDataset;
+        }
+
+        public void writeMergedContentToFile(String filePath, List<String> content) {
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
+                for (String line : content) {
+                    writer.write(line);
+                    writer.newLine();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+        InfoViewManagement infoViewManagement = new InfoViewManagement();
+        infoViewManagement.InfoViewManagement();
+        JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(this);
+        frame.dispose();
+    }//GEN-LAST:event_jButton6ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -740,6 +789,8 @@ public class SalesInsight extends javax.swing.JPanel {
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
