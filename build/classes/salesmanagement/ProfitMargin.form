@@ -115,7 +115,7 @@
     <Container class="javax.swing.JPanel" name="panellinechart">
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="0" y="320" width="1220" height="290"/>
+          <AbsoluteConstraints x="0" y="320" width="1130" height="290"/>
         </Constraint>
       </Constraints>
 
@@ -202,7 +202,7 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="20" y="10" width="440" height="40"/>
+                      <AbsoluteConstraints x="20" y="10" width="530" height="50"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -211,11 +211,11 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI Light" size="14" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="=-29068"/>
+                    <Property name="text" type="java.lang.String" value="= -29068"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="120" y="80" width="270" height="-1"/>
+                      <AbsoluteConstraints x="118" y="90" width="270" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -228,7 +228,7 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="120" y="50" width="270" height="-1"/>
+                      <AbsoluteConstraints x="118" y="60" width="270" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -237,11 +237,11 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI Light" size="14" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Net Profit Margin=(  Net Profit / Total Revenue &#x200b;  )&#xd7;100%"/>
+                    <Property name="text" type="java.lang.String" value="Net Profit Margin = (  Net Profit / Total Revenue &#x200b;  )&#xd7;100%"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="10" y="120" width="480" height="-1"/>
+                      <AbsoluteConstraints x="7" y="120" width="480" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -250,11 +250,11 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI Light" size="14" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="=-1.27%"/>
+                    <Property name="text" type="java.lang.String" value="= -1.27%"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="120" y="180" width="60" height="-1"/>
+                      <AbsoluteConstraints x="118" y="180" width="60" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -263,11 +263,11 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI Light" size="14" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="=(   -29068  / 2287140   ) x 100%"/>
+                    <Property name="text" type="java.lang.String" value="= (  -29068  / 2287140   ) x 100%"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="120" y="150" width="-1" height="-1"/>
+                      <AbsoluteConstraints x="118" y="150" width="-1" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -304,11 +304,11 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI Light" size="14" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="=4292"/>
+                    <Property name="text" type="java.lang.String" value="= 4292"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="120" y="90" width="270" height="-1"/>
+                      <AbsoluteConstraints x="118" y="90" width="270" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -317,11 +317,11 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI Light" size="14" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="=2703400-2542900-156208"/>
+                    <Property name="text" type="java.lang.String" value="= 2703400-2542900-156208"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="120" y="60" width="270" height="-1"/>
+                      <AbsoluteConstraints x="118" y="60" width="270" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -330,11 +330,11 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI Light" size="14" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Net Profit Margin=(  Net Profit / Total Revenue &#x200b;  )&#xd7;100%"/>
+                    <Property name="text" type="java.lang.String" value="Net Profit Margin = (  Net Profit / Total Revenue &#x200b;  )&#xd7;100%"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="10" y="120" width="480" height="-1"/>
+                      <AbsoluteConstraints x="7" y="120" width="480" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -343,11 +343,11 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI Light" size="14" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="=(  4292  / 2703400   ) x 100%"/>
+                    <Property name="text" type="java.lang.String" value="= (  4292  / 2703400   ) x 100%"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="120" y="150" width="-1" height="-1"/>
+                      <AbsoluteConstraints x="118" y="150" width="-1" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -356,11 +356,11 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI Light" size="14" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="=0.16%"/>
+                    <Property name="text" type="java.lang.String" value="= 0.16%"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="120" y="180" width="-1" height="-1"/>
+                      <AbsoluteConstraints x="118" y="180" width="-1" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -388,7 +388,7 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="120" y="60" width="270" height="-1"/>
+                      <AbsoluteConstraints x="118" y="60" width="270" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -410,11 +410,11 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI Light" size="14" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="=30992"/>
+                    <Property name="text" type="java.lang.String" value="= 30992"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="120" y="90" width="270" height="-1"/>
+                      <AbsoluteConstraints x="118" y="90" width="270" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -423,11 +423,11 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI Light" size="14" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Net Profit Margin=(  Net Profit / Total Revenue &#x200b;  )&#xd7;100%"/>
+                    <Property name="text" type="java.lang.String" value="Net Profit Margin = (  Net Profit / Total Revenue &#x200b;  )&#xd7;100%"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="10" y="120" width="480" height="-1"/>
+                      <AbsoluteConstraints x="7" y="120" width="480" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -436,11 +436,11 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI Light" size="14" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="=0.86%"/>
+                    <Property name="text" type="java.lang.String" value="= 0.86%"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="120" y="180" width="-1" height="-1"/>
+                      <AbsoluteConstraints x="118" y="180" width="-1" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -449,11 +449,11 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI Light" size="14" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="=(   30992  / 3593900   ) x 100%"/>
+                    <Property name="text" type="java.lang.String" value="= (   30992  / 3593900   ) x 100%"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="120" y="150" width="-1" height="-1"/>
+                      <AbsoluteConstraints x="118" y="150" width="-1" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -477,11 +477,11 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI Light" size="14" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="=2873100-2707940-156208"/>
+                    <Property name="text" type="java.lang.String" value="= 2873100-2707940-156208"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="120" y="60" width="270" height="-1"/>
+                      <AbsoluteConstraints x="118" y="60" width="270" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -507,7 +507,7 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="120" y="90" width="270" height="-1"/>
+                      <AbsoluteConstraints x="118" y="90" width="270" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -516,11 +516,11 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI Light" size="14" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Net Profit Margin=(  Net Profit / Total Revenue &#x200b;  )&#xd7;100%"/>
+                    <Property name="text" type="java.lang.String" value="Net Profit Margin = (  Net Profit / Total Revenue &#x200b;  )&#xd7;100%"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="10" y="120" width="480" height="-1"/>
+                      <AbsoluteConstraints x="7" y="120" width="480" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -529,11 +529,11 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI Light" size="14" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="=(   8952  / 2873100   ) x 100%"/>
+                    <Property name="text" type="java.lang.String" value="= (   8952  / 2873100   ) x 100%"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="120" y="150" width="-1" height="-1"/>
+                      <AbsoluteConstraints x="118" y="150" width="-1" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -546,7 +546,7 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="120" y="180" width="-1" height="-1"/>
+                      <AbsoluteConstraints x="118" y="180" width="-1" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -570,11 +570,11 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI Light" size="14" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="=1043250-975050-156208"/>
+                    <Property name="text" type="java.lang.String" value="= 1043250-975050-156208"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="120" y="60" width="270" height="-1"/>
+                      <AbsoluteConstraints x="118" y="60" width="270" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -596,11 +596,11 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI Light" size="14" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="=-88008"/>
+                    <Property name="text" type="java.lang.String" value="= -88008"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="120" y="90" width="270" height="-1"/>
+                      <AbsoluteConstraints x="118" y="90" width="270" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -609,11 +609,11 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI Light" size="14" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Net Profit Margin=(  Net Profit / Total Revenue &#x200b;  )&#xd7;100%"/>
+                    <Property name="text" type="java.lang.String" value="Net Profit Margin = (  Net Profit / Total Revenue &#x200b;  )&#xd7;100%"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="10" y="120" width="480" height="-1"/>
+                      <AbsoluteConstraints x="7" y="120" width="480" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -626,7 +626,7 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="120" y="180" width="70" height="-1"/>
+                      <AbsoluteConstraints x="118" y="180" width="70" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -635,11 +635,11 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI Light" size="14" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="=(   -88008  / 1043250   ) x 100%"/>
+                    <Property name="text" type="java.lang.String" value="= (   -88008  / 1043250   ) x 100%"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="120" y="150" width="-1" height="-1"/>
+                      <AbsoluteConstraints x="118" y="150" width="-1" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -663,7 +663,7 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI Light" size="14" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Net profit (RM) = Total revenue - Cost of Car Sold -Total expenses  "/>
+                    <Property name="text" type="java.lang.String" value="Net profit (RM) =   Total revenue - Cost of Car Sold -Total expenses  "/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -680,7 +680,7 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="120" y="180" width="20" height="20"/>
+                      <AbsoluteConstraints x="116" y="180" width="20" height="20"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -703,7 +703,7 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="120" y="50" width="270" height="20"/>
+                      <AbsoluteConstraints x="118" y="50" width="270" height="20"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -722,11 +722,11 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI Light" size="14" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Net Profit Margin=(  Net Profit / Total Revenue &#x200b;  )&#xd7;100%"/>
+                    <Property name="text" type="java.lang.String" value="Net Profit Margin =   (  Net Profit / Total Revenue &#x200b;  )&#xd7;100%"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="10" y="120" width="480" height="-1"/>
+                      <AbsoluteConstraints x="5" y="120" width="480" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -749,7 +749,7 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="120" y="80" width="270" height="20"/>
+                      <AbsoluteConstraints x="118" y="80" width="270" height="20"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -762,7 +762,7 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="120" y="150" width="20" height="20"/>
+                      <AbsoluteConstraints x="116" y="150" width="20" height="20"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -796,11 +796,11 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI Light" size="14" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Net profit (RM) = Total revenue - Cost of Car Sold -Total expenses  "/>
+                    <Property name="text" type="java.lang.String" value="Net profit (RM) =   Total revenue - Cost of Car Sold -Total expenses  "/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="10" y="10" width="490" height="50"/>
+                      <AbsoluteConstraints x="20" y="10" width="490" height="50"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -813,7 +813,7 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="110" y="80" width="270" height="20"/>
+                      <AbsoluteConstraints x="118" y="80" width="270" height="20"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -823,7 +823,7 @@
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="130" y="50" width="330" height="-1"/>
+                      <AbsoluteConstraints x="140" y="50" width="310" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -836,7 +836,7 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="110" y="50" width="270" height="20"/>
+                      <AbsoluteConstraints x="118" y="50" width="270" height="20"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -846,7 +846,7 @@
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="130" y="80" width="330" height="-1"/>
+                      <AbsoluteConstraints x="140" y="80" width="310" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -855,11 +855,11 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI Light" size="14" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Net Profit Margin=(  Net Profit / Total Revenue &#x200b;  )&#xd7;100%"/>
+                    <Property name="text" type="java.lang.String" value="Net Profit Margin =   (  Net Profit / Total Revenue &#x200b;  )&#xd7;100%"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="10" y="120" width="480" height="-1"/>
+                      <AbsoluteConstraints x="5" y="120" width="480" height="20"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -872,7 +872,7 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="120" y="180" width="80" height="20"/>
+                      <AbsoluteConstraints x="116" y="180" width="80" height="20"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -882,7 +882,7 @@
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="140" y="150" width="320" height="-1"/>
+                      <AbsoluteConstraints x="140" y="150" width="310" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -895,7 +895,7 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="120" y="150" width="80" height="20"/>
+                      <AbsoluteConstraints x="116" y="150" width="80" height="20"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -905,7 +905,7 @@
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="140" y="180" width="320" height="-1"/>
+                      <AbsoluteConstraints x="140" y="180" width="310" height="-1"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -919,14 +919,7 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="MergeDataset"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-          <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
-            <BevelBorder>
-              <Color PropertyName="highlightOuter" blue="c0" green="c0" id="lightGray" palette="1" red="c0" type="palette"/>
-              <Color PropertyName="highlightInner" blue="ff" green="ff" id="white" palette="1" red="ff" type="palette"/>
-              <Color PropertyName="shadowOuter" blue="c0" green="c0" id="lightGray" palette="1" red="c0" type="palette"/>
-              <Color PropertyName="shadowInner" blue="c0" green="c0" id="lightGray" palette="1" red="c0" type="palette"/>
-            </BevelBorder>
-          </Border>
+          <Border info="null"/>
         </Property>
       </Properties>
       <Events>
@@ -974,6 +967,19 @@
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="660" y="200" width="80" height="30"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton6">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Back"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton6ActionPerformed"/>
+      </Events>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="1140" y="560" width="-1" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
