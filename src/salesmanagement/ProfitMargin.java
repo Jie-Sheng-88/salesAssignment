@@ -19,6 +19,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import javax.swing.JFrame;
+import javax.swing.SwingUtilities;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
@@ -45,20 +46,21 @@ public class ProfitMargin extends javax.swing.JPanel {
     private int costFebruary;
     private double marginFebruary;
     double expense = expenses();
-
-    public ProfitMargin() {
+    private static String employeeID;
+    public ProfitMargin(String employeeID) {
+        this.employeeID = employeeID;
         initComponents();
         profitmargin();
         showlinechart();
     }
 
-    public static void main(String[] args) {
+    public static void ProfitMargin() {
 
         // Create a JFrame to host the Practice5 panel
         JFrame frame = new JFrame("Chart Application");
 
         // Instantiate your Practice5 class
-        ProfitMargin practice5 = new ProfitMargin();
+        ProfitMargin practice5 = new ProfitMargin(employeeID);
 
         // Add the Practice5 panel to the JFrame
         frame.getContentPane().add(practice5);
@@ -240,11 +242,13 @@ public class ProfitMargin extends javax.swing.JPanel {
         jButton1 = new javax.swing.JButton();
         jLabel44 = new javax.swing.JLabel();
         jLabel45 = new javax.swing.JLabel();
+        ReloadButton = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
 
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTable1.setBackground(new java.awt.Color(153, 0, 153));
+        jTable1.setBackground(new java.awt.Color(102, 102, 102));
         jTable1.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
         jTable1.setForeground(new java.awt.Color(255, 255, 255));
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
@@ -283,9 +287,9 @@ public class ProfitMargin extends javax.swing.JPanel {
         jScrollPane2.setViewportView(jTable1);
 
         add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 70, 360, 250));
-        add(panellinechart, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 320, 1220, 290));
+        add(panellinechart, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 320, 1130, 290));
 
-        jPanel1.setBackground(new java.awt.Color(153, 0, 153));
+        jPanel1.setBackground(new java.awt.Color(153, 0, 51));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Segoe UI Semibold", 1, 24)); // NOI18N
@@ -302,27 +306,27 @@ public class ProfitMargin extends javax.swing.JPanel {
 
         jLabel2.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
         jLabel2.setText("Net profit (RM) = Total revenue - Cost of Car Sold -Total expenses  ");
-        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 440, 40));
+        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 530, 50));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
-        jLabel3.setText("=-29068");
-        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, 270, -1));
+        jLabel3.setText("= -29068");
+        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 90, 270, -1));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
         jLabel4.setText("= 2287140-2160000-156208");
-        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 50, 270, -1));
+        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 60, 270, -1));
 
         jLabel17.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
-        jLabel17.setText("Net Profit Margin=(  Net Profit / Total Revenue ​  )×100%");
-        jPanel3.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 480, -1));
+        jLabel17.setText("Net Profit Margin = (  Net Profit / Total Revenue ​  )×100%");
+        jPanel3.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 120, 480, -1));
 
         jLabel23.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
-        jLabel23.setText("=-1.27%");
-        jPanel3.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 180, 60, -1));
+        jLabel23.setText("= -1.27%");
+        jPanel3.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 180, 60, -1));
 
         jLabel27.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
-        jLabel27.setText("=(   -29068  / 2287140   ) x 100%");
-        jPanel3.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, -1, -1));
+        jLabel27.setText("= (  -29068  / 2287140   ) x 100%");
+        jPanel3.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 150, -1, -1));
 
         jTabbedPane1.addTab("June", jPanel3);
 
@@ -333,24 +337,24 @@ public class ProfitMargin extends javax.swing.JPanel {
         jPanel4.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 530, 50));
 
         jLabel6.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
-        jLabel6.setText("=4292");
-        jPanel4.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 90, 270, -1));
+        jLabel6.setText("= 4292");
+        jPanel4.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 90, 270, -1));
 
         jLabel13.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
-        jLabel13.setText("=2703400-2542900-156208");
-        jPanel4.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 60, 270, -1));
+        jLabel13.setText("= 2703400-2542900-156208");
+        jPanel4.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 60, 270, -1));
 
         jLabel18.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
-        jLabel18.setText("Net Profit Margin=(  Net Profit / Total Revenue ​  )×100%");
-        jPanel4.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 480, -1));
+        jLabel18.setText("Net Profit Margin = (  Net Profit / Total Revenue ​  )×100%");
+        jPanel4.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 120, 480, -1));
 
         jLabel22.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
-        jLabel22.setText("=(  4292  / 2703400   ) x 100%");
-        jPanel4.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, -1, -1));
+        jLabel22.setText("= (  4292  / 2703400   ) x 100%");
+        jPanel4.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 150, -1, -1));
 
         jLabel28.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
-        jLabel28.setText("=0.16%");
-        jPanel4.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 180, -1, -1));
+        jLabel28.setText("= 0.16%");
+        jPanel4.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 180, -1, -1));
 
         jTabbedPane1.addTab("July", jPanel4);
 
@@ -358,35 +362,35 @@ public class ProfitMargin extends javax.swing.JPanel {
 
         jLabel7.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
         jLabel7.setText("= 3593900-3406700-156208");
-        jPanel5.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 60, 270, -1));
+        jPanel5.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 60, 270, -1));
 
         jLabel10.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
         jLabel10.setText("Net profit (RM) = Total revenue - Cost of Car Sold -Total expenses  ");
         jPanel5.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 530, 50));
 
         jLabel14.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
-        jLabel14.setText("=30992");
-        jPanel5.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 90, 270, -1));
+        jLabel14.setText("= 30992");
+        jPanel5.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 90, 270, -1));
 
         jLabel19.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
-        jLabel19.setText("Net Profit Margin=(  Net Profit / Total Revenue ​  )×100%");
-        jPanel5.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 480, -1));
+        jLabel19.setText("Net Profit Margin = (  Net Profit / Total Revenue ​  )×100%");
+        jPanel5.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 120, 480, -1));
 
         jLabel24.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
-        jLabel24.setText("=0.86%");
-        jPanel5.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 180, -1, -1));
+        jLabel24.setText("= 0.86%");
+        jPanel5.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 180, -1, -1));
 
         jLabel29.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
-        jLabel29.setText("=(   30992  / 3593900   ) x 100%");
-        jPanel5.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, -1, -1));
+        jLabel29.setText("= (   30992  / 3593900   ) x 100%");
+        jPanel5.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 150, -1, -1));
 
         jTabbedPane1.addTab("August", jPanel5);
 
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel8.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
-        jLabel8.setText("=2873100-2707940-156208");
-        jPanel6.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 60, 270, -1));
+        jLabel8.setText("= 2873100-2707940-156208");
+        jPanel6.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 60, 270, -1));
 
         jLabel11.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
         jLabel11.setText("Net profit (RM) = Total revenue - Cost of Car Sold -Total expenses  ");
@@ -394,59 +398,59 @@ public class ProfitMargin extends javax.swing.JPanel {
 
         jLabel15.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
         jLabel15.setText("= 8952");
-        jPanel6.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 90, 270, -1));
+        jPanel6.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 90, 270, -1));
 
         jLabel20.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
-        jLabel20.setText("Net Profit Margin=(  Net Profit / Total Revenue ​  )×100%");
-        jPanel6.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 480, -1));
+        jLabel20.setText("Net Profit Margin = (  Net Profit / Total Revenue ​  )×100%");
+        jPanel6.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 120, 480, -1));
 
         jLabel25.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
-        jLabel25.setText("=(   8952  / 2873100   ) x 100%");
-        jPanel6.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, -1, -1));
+        jLabel25.setText("= (   8952  / 2873100   ) x 100%");
+        jPanel6.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 150, -1, -1));
 
         jLabel30.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
         jLabel30.setText("= 0.31%");
-        jPanel6.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 180, -1, -1));
+        jPanel6.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 180, -1, -1));
 
         jTabbedPane1.addTab("September", jPanel6);
 
         jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel9.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
-        jLabel9.setText("=1043250-975050-156208");
-        jPanel7.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 60, 270, -1));
+        jLabel9.setText("= 1043250-975050-156208");
+        jPanel7.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 60, 270, -1));
 
         jLabel12.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
         jLabel12.setText("Net profit (RM) = Total revenue - Cost of Car Sold -Total expenses  ");
         jPanel7.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 530, 50));
 
         jLabel16.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
-        jLabel16.setText("=-88008");
-        jPanel7.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 90, 270, -1));
+        jLabel16.setText("= -88008");
+        jPanel7.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 90, 270, -1));
 
         jLabel21.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
-        jLabel21.setText("Net Profit Margin=(  Net Profit / Total Revenue ​  )×100%");
-        jPanel7.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 480, -1));
+        jLabel21.setText("Net Profit Margin = (  Net Profit / Total Revenue ​  )×100%");
+        jPanel7.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 120, 480, -1));
 
         jLabel26.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
         jLabel26.setText("= -8.43%");
-        jPanel7.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 180, 70, -1));
+        jPanel7.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 180, 70, -1));
 
         jLabel31.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
-        jLabel31.setText("=(   -88008  / 1043250   ) x 100%");
-        jPanel7.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, -1, -1));
+        jLabel31.setText("= (   -88008  / 1043250   ) x 100%");
+        jPanel7.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 150, -1, -1));
 
         jTabbedPane1.addTab("October", jPanel7);
 
         jPanel8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel33.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
-        jLabel33.setText("Net profit (RM) = Total revenue - Cost of Car Sold -Total expenses  ");
+        jLabel33.setText("Net profit (RM) =   Total revenue - Cost of Car Sold -Total expenses  ");
         jPanel8.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 530, 50));
 
         jLabel34.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
         jLabel34.setText("=");
-        jPanel8.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 180, 20, 20));
+        jPanel8.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(116, 180, 20, 20));
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -457,7 +461,7 @@ public class ProfitMargin extends javax.swing.JPanel {
 
         jLabel35.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
         jLabel35.setText("=");
-        jPanel8.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 50, 270, 20));
+        jPanel8.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 50, 270, 20));
 
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -467,8 +471,8 @@ public class ProfitMargin extends javax.swing.JPanel {
         jPanel8.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 80, 310, -1));
 
         jLabel32.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
-        jLabel32.setText("Net Profit Margin=(  Net Profit / Total Revenue ​  )×100%");
-        jPanel8.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 480, -1));
+        jLabel32.setText("Net Profit Margin =   (  Net Profit / Total Revenue ​  )×100%");
+        jPanel8.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 120, 480, -1));
 
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -479,11 +483,11 @@ public class ProfitMargin extends javax.swing.JPanel {
 
         jLabel36.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
         jLabel36.setText("=");
-        jPanel8.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, 270, 20));
+        jPanel8.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 80, 270, 20));
 
         jLabel37.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
         jLabel37.setText("=");
-        jPanel8.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, 20, 20));
+        jPanel8.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(116, 150, 20, 20));
 
         jTextField4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -497,56 +501,56 @@ public class ProfitMargin extends javax.swing.JPanel {
         jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel38.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
-        jLabel38.setText("Net profit (RM) = Total revenue - Cost of Car Sold -Total expenses  ");
-        jPanel9.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 490, 50));
+        jLabel38.setText("Net profit (RM) =   Total revenue - Cost of Car Sold -Total expenses  ");
+        jPanel9.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 490, 50));
 
         jLabel39.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
         jLabel39.setText("=");
-        jPanel9.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 80, 270, 20));
+        jPanel9.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 80, 270, 20));
 
         jTextField5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField5ActionPerformed(evt);
             }
         });
-        jPanel9.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, 330, -1));
+        jPanel9.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 50, 310, -1));
 
         jLabel40.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
         jLabel40.setText("=");
-        jPanel9.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 50, 270, 20));
+        jPanel9.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 50, 270, 20));
 
         jTextField6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField6ActionPerformed(evt);
             }
         });
-        jPanel9.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 80, 330, -1));
+        jPanel9.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 80, 310, -1));
 
         jLabel41.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
-        jLabel41.setText("Net Profit Margin=(  Net Profit / Total Revenue ​  )×100%");
-        jPanel9.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 480, -1));
+        jLabel41.setText("Net Profit Margin =   (  Net Profit / Total Revenue ​  )×100%");
+        jPanel9.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 120, 480, 20));
 
         jLabel42.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
         jLabel42.setText("=");
-        jPanel9.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 180, 80, 20));
+        jPanel9.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(116, 180, 80, 20));
 
         jTextField7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField7ActionPerformed(evt);
             }
         });
-        jPanel9.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 150, 320, -1));
+        jPanel9.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 150, 310, -1));
 
         jLabel43.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
         jLabel43.setText("=");
-        jPanel9.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, 80, 20));
+        jPanel9.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(116, 150, 80, 20));
 
         jTextField8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField8ActionPerformed(evt);
             }
         });
-        jPanel9.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 180, 320, -1));
+        jPanel9.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 180, 310, -1));
 
         jTabbedPane1.addTab("February", jPanel9);
 
@@ -555,27 +559,43 @@ public class ProfitMargin extends javax.swing.JPanel {
         add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 520, 250));
 
         jButton1.setText("MergeDataset");
-        jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.lightGray, java.awt.Color.white, java.awt.Color.lightGray, java.awt.Color.lightGray));
+        jButton1.setBorder(null);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 190, 90, 30));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 200, 90, 30));
 
-        jLabel44.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
-        jLabel44.setText("Press the \"MergeDataset\" and exit for the first time to load the data");
+        jLabel44.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel44.setText("Press the \"MergeDataset\" and reload");
         add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 140, 310, 60));
 
         jLabel45.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel45.setText("Press enter to load the value in the text field");
         add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 260, 280, 20));
+
+        ReloadButton.setText("Reload");
+        ReloadButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ReloadButtonActionPerformed(evt);
+            }
+        });
+        add(ReloadButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 200, 80, 30));
+
+        jButton6.setText("Back");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+        add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 560, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        if (sumJanuary != 0 && costJanuary != 0) {
+        if (sumDecember != 0 && costDecember != 0) {
             try {
-                jTextField1.setText(Integer.toString(sumJanuary) + "-" + Integer.toString(costJanuary) + "-" + Double.toString(expense));
+                jTextField1.setText(Integer.toString(sumDecember) + "-" + Integer.toString(costDecember) + "-" + Double.toString(expense));
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -746,9 +766,42 @@ public class ProfitMargin extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_jTextField8ActionPerformed
 
+    private void ReloadButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ReloadButtonActionPerformed
+        // TODO add your handling code here:
+        JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(this);
+        frame.dispose();
+
+        // Create a new JFrame
+        JFrame newFrame = new JFrame("Chart Application");
+
+        // Instantiate your Practice5 class
+        ProfitMargin practice5 = new ProfitMargin(employeeID);
+
+        // Add the Practice5 panel to the new JFrame
+        newFrame.getContentPane().add(practice5);
+
+        // Set JFrame properties
+        newFrame.setSize(1233, 661);
+        newFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        newFrame.setLocationRelativeTo(null); // Center the frame on the screen
+
+        // Make the new JFrame visible
+        newFrame.setVisible(true);
+    }//GEN-LAST:event_ReloadButtonActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+        InfoViewManagement infoViewManagement = new InfoViewManagement(employeeID);
+        infoViewManagement.InfoViewManagement();
+        JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(this);
+        frame.dispose();
+    }//GEN-LAST:event_jButton6ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton ReloadButton;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

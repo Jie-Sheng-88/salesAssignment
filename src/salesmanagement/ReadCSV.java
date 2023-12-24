@@ -1,3 +1,5 @@
+package salesmanagement;
+
 //package salesManagement;
 //
 //import java.io.BufferedReader;
