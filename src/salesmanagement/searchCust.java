@@ -13,9 +13,8 @@ public class searchCust {
     private static Scanner x;
 
     public static void main(String[] args) {
-        // TODO code application logic here
 
-        String filepath = "src\\cust.csv";//change your file path
+        String filepath = "src\\cust.csv";
 
         String searchTerm = JOptionPane.showInputDialog("Enter the search term:"
                 + "\n-Customer Id"
